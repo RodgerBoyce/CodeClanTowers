@@ -4,7 +4,8 @@ public enum RoomType {
     SINGLE(1),
     DOUBLE(2),
     TRIPLE(3),
-    FAMILY(4);
+    FAMILY(4),
+    CONFERENCE(50);
 
     private final int capacity;
 
@@ -12,7 +13,7 @@ public enum RoomType {
         this.capacity = capacity;
     }
 
-    public int getValue(){
+    public int getCapacity(){
         return capacity;
     }
 

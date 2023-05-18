@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="enums" />
+        <module name="CC Towers Lab" />
       </profile>
     </annotationProcessing>
   </component>

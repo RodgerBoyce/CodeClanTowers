@@ -1,27 +1,19 @@
 package Rooms;
+import Guests.Guest;
+import java.util.ArrayList;
 
 public abstract class Room {
+    private ArrayList<Guest> guests;
+    private int capacity;
 
-    private RoomType roomType;
-    private int roomNum;
-
-    public Room(RoomType roomType, int roomNum){
-        this.roomType = roomType;
-        this.roomNum = roomNum;
+    public Room(ArrayList<Guest> guests, int capacity){
+        this.guests = guests;
+        this.capacity = capacity;
     }
-
-    public RoomType getRoomType(){
-        return this.roomType;
+    public int getCapacity() {
+        return this.capacity;
     }
-    public int getRoomNum(){
-        return this.roomNum;
-    }
-
-    public void setRoomType(RoomType roomType){
-        this.roomType = roomType;
-    }
-
-    public int getValueFromEnum(){
-        return this.roomType.getValue();
+    public ArrayList<Guest> getGuests() {
+        return this.guests;
     }
 }
